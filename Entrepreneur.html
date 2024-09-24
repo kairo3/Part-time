@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>คู่มือการใช้งาน</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #333;
+        }
+
+        .switch-container {
+            text-align: left;
+            display: inline-block;
+        }
+
+        .switch-link {
+            font-size: 1.5em;
+            text-decoration: none;
+            color: #333;
+            padding: 5px 20px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .switch-link.active {
+            color: #333;
+        }
+
+        .switch-link.active::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -5px;
+            height: 2px;
+            background-color: rgb(255, 255, 255);
+            transform: scaleX(1);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 2em;
+            margin: 20px 0;
+        }
+
+        .search-bar {
+            margin-bottom: 40px;
+        }
+
+        .search-bar input[type="text"] {
+            width: 70%;
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-bar button {
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .category-section h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .cards_1 {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+            margin-top: 80px;
+        }
+        .cards_2 {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+            margin-top: 80px;
+        }
+
+        .cards_3 {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+            margin-top: 80px;
+        }
+        .card {
+            background-color: #ffffff;
+            border: 1px solid #fff1f1;
+            border-radius: 10px;
+            width: 23%;
+            padding: 20px;
+            text-align: left;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .card img {
+            max-width: 35%;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            position: absolute;
+            top: -60px;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 3px solid #847f7f;
+            background-color: #ffffff;
+            padding: 5px;
+        }
+
+        .card h3 {
+            font-size: 1.2em;
+            color: #333;
+            margin-top: 70px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 1em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .card a {
+            display: inline-block;
+            padding: 10px 15px;
+            border: 2px solid #000;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #000;
+            margin-top: 10px;
+        }
+
+        .card a:hover {
+            background-color: #fffbfb;
+            border-color: #343333;
+        }
+    </style>
+</head>
+<body>
+    <div class="switch-container">
+        <a href="jobapplicants.html" class="switch-link" id="jobseeker">ผู้สมัครงาน</a>
+        <a href="Entrepreneur.html" class="switch-link active" id="employer">ผู้ประกอบการ</a>
+    </div>
+    <div class="container">
+        <div class="header">
+            <h1>JOBBKK Help Center</h1>
+        </div>
+       
+        <div class="category-section">
+            <h2>หมวดหมู่แนะนำสำหรับคุณ</h2>
+            <div class="cards_1">
+                <div class="card">
+                    <img src="assets/images/11.png" alt="การใช้งานหน้าเว็บไซต์">
+                    <h3>การเข้าสู่ระบบ</h3>
+                    <p>วิธีการใช้งานเว็บไซต์ การสร้างเรซูเม่ และสมัครงาน รวมไปถึงฟังก์ชันต่างๆในระบบ</p>
+                    <a href="11.html">เรียนรู้เพิ่มเติม</a>
+                </div>
+                <div class="card">
+                    <img src="assets/images/11.png" alt="การจัดการเรซูเม่">
+                    <h3>การค้นผู้สมัครงาน</h3>
+                    <p>ผู้ประกอบการสามารถดูประวัติของผู้สมัครงานที่ได้ทำการลงทะเบียนไว้</p>
+                    <a href="22.html">เรียนรู้เพิ่มเติม</a>
+                </div>
+                <div class="card">
+                    <img src="assets/images/11.png" alt="จัดการบัญชีผู้ใช้งาน">
+                    <h3>การจัดการใบสมัคร User</h3>
+                    <p>การเปิดดู และ คัดเลือกผู้สมัครในตำแหน่งงานของคุณ และ การดูใบสมัครงานที่ปกปิด</p>
+                    <a href="33.html">เรียนรู้เพิ่มเติม</a>
+                </div>
+                
+
+
+                <div class="cards_2">
+                <div class="card">
+                    <img src="assets/images/11.png" alt="การจัดการบัญชี">
+                    <h3>การจัดการบัญชี</h3>
+                    <p>การตั้งค่าที่เกี่ยวกับบัญชีผู้ใช้งาน อีเมล การรับข่าวสารและความเป็นส่วนตัว</p>
+                    <a href="44.html">เรียนรู้เพิ่มเติม</a>
+                </div>
+                <div class="card">
+                    <img src="assets/images/11.png" alt="การตั้งค่าเบื้องต้น">
+                    <h3>การตั้งค่าเบื้องต้น</h3>
+                    <p>คำแนะนำในการตั้งค่าเริ่มต้นเพื่อใช้งานระบบได้อย่างมีประสิทธิภาพ</p>
+                    <a href="55.html">เรียนรู้เพิ่มเติม</a>
+                </div>
+                <div class="card">
+                    <img src="assets/images/11.png" alt="การใช้งานฟีเจอร์ใหม่">
+                    <h3>การใช้งานฟีเจอร์ใหม่</h3>
+                    <p>คู่มือการใช้งานฟีเจอร์ใหม่ๆ ที่เพิ่มเข้ามาในระบบ</p>
+                    <a href="66.html">เรียนรู้เพิ่มเติม</a>
+                </div>
+                </div>
+
+
+                <div class="cards_3">
+                <div class="card">
+                    <img src="assets/images/11.png" alt="คำถามที่พบบ่อย">
+                    <h3>คำถามที่พบบ่อย</h3>
+                    <p>รวมคำถามและคำตอบที่ผู้ใช้งานมักจะสอบถามบ่อยครั้ง</p>
+                    <a href="77.html">เรียนรู้เพิ่มเติม</a>
+                </div>
+                <div class="card">
+                    <img src="assets/images/11.png" alt="ติดต่อฝ่ายสนับสนุน">
+                    <h3>ติดต่อฝ่ายสนับสนุน</h3>
+                    <p>ข้อมูลการติดต่อฝ่ายสนับสนุนหากพบปัญหาการใช้งาน</p>
+                    <a href="88.html">เรียนรู้เพิ่มเติม</a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
